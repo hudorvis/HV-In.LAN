@@ -74,7 +74,7 @@ struct AppRootView: View {
     private func landscapeLayout(size: CGSize, isPad: Bool) -> some View {
         let paneWidth = isPad ? min(410, size.width * 0.34) : min(320, max(232, size.width * 0.38))
 
-        HStack(spacing: 0) {
+        return HStack(spacing: 0) {
             ScrollView { VStack(spacing: isPad ? 24 : 12) {
                 AppWordmark(compact: !isPad)
                     .padding(.top, isPad ? 24 : 12)
