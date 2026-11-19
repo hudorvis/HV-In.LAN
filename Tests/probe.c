@@ -37,6 +37,9 @@ int main(void) {
     LANProbeResult result = {.echo_ms = -1};
     tcp_batch(&port, 1, local, local, index, flag, &result);
     assert(result.tcp_checked && result.open_port == port && !result.tcp_refused);
+    int accepted = accept(listener, NULL, NULL);
+    assert(accepted >= 0);
+    close(accepted);
     int closed_port_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     assert(closed_port_socket >= 0);
     struct sockaddr_in unused = endpoint(local, 0);
