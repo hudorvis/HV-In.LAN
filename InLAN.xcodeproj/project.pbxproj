@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		969CC11404B608CAD933D7EC /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832A5D63ECA81B0022B2CEA /* AppRootView.swift */; };
+		F68BA6653B31664C88933C41 /* InLANApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB7F4F91F5D2CD290632F /* InLANApp.swift */; };
+		A1281AECA3503AC3FA294753 /* AppMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D002EA631A7ECBA98372A07D /* AppMode.swift */; };
+		60C5C033CEA57EB6EEA38E05 /* LANDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14E2E25B10E98C0BB42625 /* LANDevice.swift */; };
+		02BB3C2250F695C584206424 /* NetworkSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679C47A0DA11BFD3B9E1E3F /* NetworkSnapshot.swift */; };
+		F31FA133CF8538722A2683D4 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7DB028C88CD505CDF0AA4 /* PreviewData.swift */; };
+		24AE0A9ED241F346333D54A9 /* DeviceClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B5E3E6139C41766F072B6 /* DeviceClassifier.swift */; };
+		9517EDCB90A6CFD55002D0CC /* ICMPPingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DED6A420E83A668DB323CF /* ICMPPingService.swift */; };
+		F23D716818EF69B2AA75C091 /* LocalNetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F358284B931EE84526B962 /* LocalNetworkInfo.swift */; };
+		99A77D30C771837F15280C31 /* NetworkScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC34A04E9C1260FA3F577A6 /* NetworkScanner.swift */; };
+		5F0B50ED1FC8A0AA792BAE2F /* ReverseDNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E58FE1C98E5A33622A22D /* ReverseDNSResolver.swift */; };
+		2545F199CE24BA651EFB6FB2 /* LANProbe.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B6FA34A0EC7F10C9A60B1E3 /* LANProbe.c */; };
+		335A6E19F304A08D78E00906 /* LANNames.c in Sources */ = {isa = PBXBuildFile; fileRef = 63A2EA39A29BB0FB53BB9ACF /* LANNames.c */; };
+		2D07BCDA68647B243D081825 /* BonjourDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85987A23D27C8E2C110740 /* BonjourDiscovery.swift */; };
+		E4C8927E91E1AB9024D3FC29 /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220632701579E69C0FD5B8E4 /* DeviceStore.swift */; };
+		4608354D9BA59924CBD7DA80 /* InLANTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3DE9E4C1789E03A763C0F8 /* InLANTheme.swift */; };
+		AFCAFDEA25AEDCA20BDF6084 /* AppWordmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB646FB3C169972D913A54 /* AppWordmark.swift */; };
+		E8DADD2F8CD709C1E208337D /* BottomJoinedActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DEF35649A6691256170AC /* BottomJoinedActions.swift */; };
+		FEB07933FA96968C7D5CCEAA /* DeviceIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD22E4B07C975E6BE1FA528 /* DeviceIcon.swift */; };
+		31D85A1E9ED288240FA94215 /* JoinedPillPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7044078545C8AE148C31AA9F /* JoinedPillPicker.swift */; };
+		849AE546AC219899C143590A /* Sparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1141836291FAF01500FC82 /* Sparkline.swift */; };
+		5A959ADD168661278E003C4B /* StatusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5107548B6ED8ABE5E862D2 /* StatusDot.swift */; };
+		2556F9C360BE6C8F57912017 /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283BFB71F91D645AB71C173 /* DeviceDetailView.swift */; };
+		5312A0252D721C464162E4D9 /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E0CF386BF8D7475784211A /* DeviceListView.swift */; };
+		6B54CA98020ACBBE4B8F5EF3 /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1F3A50B4D33A4E412B2BE /* DeviceRowView.swift */; };
+		55FDE55E3BB1C7365B3C44FF /* MonitorTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941384F0C5C5248E0085361C /* MonitorTileView.swift */; };
+		082EDCE0A13C33B16C3F2CE8 /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43A162AF35D10AAE94E695 /* MonitorView.swift */; };
+		50FA51306F8D27133F2F6ED3 /* ScanSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503E817DE1024E951400609 /* ScanSetupView.swift */; };
+		825FF623B136FBAD01A91166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CB9458171B979FDE2DBDB5 /* Assets.xcassets */; };
+		98E5EB6CC3C876EB4213E6E5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F531770A774A01CB9B30830C /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4832A5D63ECA81B0022B2CEA /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppRootView.swift"; sourceTree = "<group>"; };
+		AD3EB7F4F91F5D2CD290632F /* InLANApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InLANApp.swift"; sourceTree = "<group>"; };
+		D002EA631A7ECBA98372A07D /* AppMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppMode.swift"; sourceTree = "<group>"; };
+		AD14E2E25B10E98C0BB42625 /* LANDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LANDevice.swift"; sourceTree = "<group>"; };
+		7679C47A0DA11BFD3B9E1E3F /* NetworkSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkSnapshot.swift"; sourceTree = "<group>"; };
+		72A7DB028C88CD505CDF0AA4 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewData.swift"; sourceTree = "<group>"; };
+		2B8B5E3E6139C41766F072B6 /* DeviceClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceClassifier.swift"; sourceTree = "<group>"; };
+		88DED6A420E83A668DB323CF /* ICMPPingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICMPPingService.swift"; sourceTree = "<group>"; };
+		52F358284B931EE84526B962 /* LocalNetworkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalNetworkInfo.swift"; sourceTree = "<group>"; };
+		EAC34A04E9C1260FA3F577A6 /* NetworkScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkScanner.swift"; sourceTree = "<group>"; };
+		7E7E58FE1C98E5A33622A22D /* ReverseDNSResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReverseDNSResolver.swift"; sourceTree = "<group>"; };
+		5B6FA34A0EC7F10C9A60B1E3 /* LANProbe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "LANProbe.c"; sourceTree = "<group>"; };
+		63A2EA39A29BB0FB53BB9ACF /* LANNames.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "LANNames.c"; sourceTree = "<group>"; };
+		7C57F0BFFF03A9F7D8EE248D /* LANNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LANNames.h"; sourceTree = "<group>"; };
+		002650118696EB0FFCE99329 /* LANProbe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LANProbe.h"; sourceTree = "<group>"; };
+		E2DB3D4438B1CF57BD2711D0 /* InLAN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InLAN-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD85987A23D27C8E2C110740 /* BonjourDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BonjourDiscovery.swift"; sourceTree = "<group>"; };
+		220632701579E69C0FD5B8E4 /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceStore.swift"; sourceTree = "<group>"; };
+		5D3DE9E4C1789E03A763C0F8 /* InLANTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InLANTheme.swift"; sourceTree = "<group>"; };
+		15BB646FB3C169972D913A54 /* AppWordmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppWordmark.swift"; sourceTree = "<group>"; };
+		B10DEF35649A6691256170AC /* BottomJoinedActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BottomJoinedActions.swift"; sourceTree = "<group>"; };
+		4BD22E4B07C975E6BE1FA528 /* DeviceIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceIcon.swift"; sourceTree = "<group>"; };
+		7044078545C8AE148C31AA9F /* JoinedPillPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoinedPillPicker.swift"; sourceTree = "<group>"; };
+		0C1141836291FAF01500FC82 /* Sparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sparkline.swift"; sourceTree = "<group>"; };
+		3B5107548B6ED8ABE5E862D2 /* StatusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatusDot.swift"; sourceTree = "<group>"; };
+		2283BFB71F91D645AB71C173 /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceDetailView.swift"; sourceTree = "<group>"; };
+		68E0CF386BF8D7475784211A /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceListView.swift"; sourceTree = "<group>"; };
+		A1D1F3A50B4D33A4E412B2BE /* DeviceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceRowView.swift"; sourceTree = "<group>"; };
+		941384F0C5C5248E0085361C /* MonitorTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MonitorTileView.swift"; sourceTree = "<group>"; };
+		0A43A162AF35D10AAE94E695 /* MonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MonitorView.swift"; sourceTree = "<group>"; };
+		C503E817DE1024E951400609 /* ScanSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanSetupView.swift"; sourceTree = "<group>"; };
+		1E58A5E09C53BE6331B4C93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		F531770A774A01CB9B30830C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		B7CB9458171B979FDE2DBDB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		34F686D89FE98D7807DD38CB /* In.LAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In.LAN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		196738691649AC2E2FD321A6 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EB2D8158FC6EF9EB19CB439 = {isa = PBXGroup; children = (
+			1EB1A2E8724A8402FBC60014,
+			1E78B559816E575FC0BDB29C,
+		); sourceTree = "<group>"; };
+		1E78B559816E575FC0BDB29C /* Products */ = {isa = PBXGroup; children = (34F686D89FE98D7807DD38CB /* In.LAN.app */,); name = Products; sourceTree = "<group>"; };
+		1EB1A2E8724A8402FBC60014 /* InLAN */ = {isa = PBXGroup; children = (
+			C59CDB2ED6354D89E9EA8373 /* App */,
+			AD3EB7F4F91F5D2CD290632F /* InLANApp.swift */,
+			C9F969EC8B67C099C909E393 /* Models */,
+			C743801A30C1E2E0EE5161ED /* Networking */,
+			883DF52EA7C827A3F04F1435 /* Persistence */,
+			3E877D97B181252BF257B451 /* Resources */,
+			CCCAC3F690A353AFAD6AF470 /* Theme */,
+			170D685B8DE50AF1DCE944DE /* Views */,
+		); path = "InLAN"; sourceTree = "<group>"; };
+		C59CDB2ED6354D89E9EA8373 /* App */ = {isa = PBXGroup; children = (
+			4832A5D63ECA81B0022B2CEA /* AppRootView.swift */,
+		); path = "App"; sourceTree = "<group>"; };
+		C9F969EC8B67C099C909E393 /* Models */ = {isa = PBXGroup; children = (
+			D002EA631A7ECBA98372A07D /* AppMode.swift */,
+			AD14E2E25B10E98C0BB42625 /* LANDevice.swift */,
+			7679C47A0DA11BFD3B9E1E3F /* NetworkSnapshot.swift */,
+			72A7DB028C88CD505CDF0AA4 /* PreviewData.swift */,
+		); path = "Models"; sourceTree = "<group>"; };
+		C743801A30C1E2E0EE5161ED /* Networking */ = {isa = PBXGroup; children = (
+			2B8B5E3E6139C41766F072B6 /* DeviceClassifier.swift */,
+			88DED6A420E83A668DB323CF /* ICMPPingService.swift */,
+			52F358284B931EE84526B962 /* LocalNetworkInfo.swift */,
+			EAC34A04E9C1260FA3F577A6 /* NetworkScanner.swift */,
+			7E7E58FE1C98E5A33622A22D /* ReverseDNSResolver.swift */,
+			5B6FA34A0EC7F10C9A60B1E3 /* LANProbe.c */,
+			63A2EA39A29BB0FB53BB9ACF /* LANNames.c */,
+			7C57F0BFFF03A9F7D8EE248D /* LANNames.h */,
+			002650118696EB0FFCE99329 /* LANProbe.h */,
+			E2DB3D4438B1CF57BD2711D0 /* InLAN-Bridging-Header.h */,
+			FD85987A23D27C8E2C110740 /* BonjourDiscovery.swift */,
+		); path = "Networking"; sourceTree = "<group>"; };
+		883DF52EA7C827A3F04F1435 /* Persistence */ = {isa = PBXGroup; children = (
+			220632701579E69C0FD5B8E4 /* DeviceStore.swift */,
+		); path = "Persistence"; sourceTree = "<group>"; };
+		3E877D97B181252BF257B451 /* Resources */ = {isa = PBXGroup; children = (
+			B7CB9458171B979FDE2DBDB5 /* Assets.xcassets */,
+			1E58A5E09C53BE6331B4C93B /* Info.plist */,
+			F531770A774A01CB9B30830C /* PrivacyInfo.xcprivacy */,
+		); path = "Resources"; sourceTree = "<group>"; };
+		CCCAC3F690A353AFAD6AF470 /* Theme */ = {isa = PBXGroup; children = (
+			5D3DE9E4C1789E03A763C0F8 /* InLANTheme.swift */,
+		); path = "Theme"; sourceTree = "<group>"; };
+		170D685B8DE50AF1DCE944DE /* Views */ = {isa = PBXGroup; children = (
+			67D87EFFBBE2B811E72BB2D1 /* Components */,
+			453A15429C5E4953043F4F0F /* Devices */,
+			7E630E34608A8F8181D87654 /* Monitor */,
+			A7BE0A596C48155FF7090049 /* Setup */,
+		); path = "Views"; sourceTree = "<group>"; };
+		67D87EFFBBE2B811E72BB2D1 /* Components */ = {isa = PBXGroup; children = (
+			15BB646FB3C169972D913A54 /* AppWordmark.swift */,
+			B10DEF35649A6691256170AC /* BottomJoinedActions.swift */,
+			4BD22E4B07C975E6BE1FA528 /* DeviceIcon.swift */,
+			7044078545C8AE148C31AA9F /* JoinedPillPicker.swift */,
+			0C1141836291FAF01500FC82 /* Sparkline.swift */,
+			3B5107548B6ED8ABE5E862D2 /* StatusDot.swift */,
+		); path = "Components"; sourceTree = "<group>"; };
+		453A15429C5E4953043F4F0F /* Devices */ = {isa = PBXGroup; children = (
+			2283BFB71F91D645AB71C173 /* DeviceDetailView.swift */,
+			68E0CF386BF8D7475784211A /* DeviceListView.swift */,
+			A1D1F3A50B4D33A4E412B2BE /* DeviceRowView.swift */,
+		); path = "Devices"; sourceTree = "<group>"; };
+		7E630E34608A8F8181D87654 /* Monitor */ = {isa = PBXGroup; children = (
+			941384F0C5C5248E0085361C /* MonitorTileView.swift */,
+			0A43A162AF35D10AAE94E695 /* MonitorView.swift */,
+		); path = "Monitor"; sourceTree = "<group>"; };
+		A7BE0A596C48155FF7090049 /* Setup */ = {isa = PBXGroup; children = (
+			C503E817DE1024E951400609 /* ScanSetupView.swift */,
+		); path = "Setup"; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1822280F6B0881F495C33105 /* InLAN */ = {isa = PBXNativeTarget; buildConfigurationList = E31BA15CC04B0F0B923553D1 /* Build configuration list for PBXNativeTarget "InLAN" */; buildPhases = (B0193229F5D633567D732C36 /* Sources */, 196738691649AC2E2FD321A6 /* Frameworks */, 8B0AD72DF5FB9B933D77B1AB /* Resources */,); buildRules = (); dependencies = (); name = InLAN; productName = InLAN; productReference = 34F686D89FE98D7807DD38CB /* In.LAN.app */; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E88446A3F44B57E975BE17B /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = {1822280F6B0881F495C33105 = {CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 314425BAD361EE8153704C56 /* Build configuration list for PBXProject "InLAN" */; compatibilityVersion = "Xcode 15.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base,); mainGroup = 2EB2D8158FC6EF9EB19CB439; productRefGroup = 1E78B559816E575FC0BDB29C /* Products */; projectDirPath = ""; projectRoot = ""; targets = (1822280F6B0881F495C33105 /* InLAN */,); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B0AD72DF5FB9B933D77B1AB /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+			825FF623B136FBAD01A91166 /* Assets.xcassets in Resources */,
+			98E5EB6CC3C876EB4213E6E5 /* PrivacyInfo.xcprivacy in Resources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0193229F5D633567D732C36 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			969CC11404B608CAD933D7EC /* AppRootView.swift in Sources */,
+			F68BA6653B31664C88933C41 /* InLANApp.swift in Sources */,
+			A1281AECA3503AC3FA294753 /* AppMode.swift in Sources */,
+			60C5C033CEA57EB6EEA38E05 /* LANDevice.swift in Sources */,
+			02BB3C2250F695C584206424 /* NetworkSnapshot.swift in Sources */,
+			F31FA133CF8538722A2683D4 /* PreviewData.swift in Sources */,
+			24AE0A9ED241F346333D54A9 /* DeviceClassifier.swift in Sources */,
+			9517EDCB90A6CFD55002D0CC /* ICMPPingService.swift in Sources */,
+			F23D716818EF69B2AA75C091 /* LocalNetworkInfo.swift in Sources */,
+			99A77D30C771837F15280C31 /* NetworkScanner.swift in Sources */,
+			5F0B50ED1FC8A0AA792BAE2F /* ReverseDNSResolver.swift in Sources */,
+			2545F199CE24BA651EFB6FB2 /* LANProbe.c in Sources */,
+			335A6E19F304A08D78E00906 /* LANNames.c in Sources */,
+			2D07BCDA68647B243D081825 /* BonjourDiscovery.swift in Sources */,
+			E4C8927E91E1AB9024D3FC29 /* DeviceStore.swift in Sources */,
+			4608354D9BA59924CBD7DA80 /* InLANTheme.swift in Sources */,
+			AFCAFDEA25AEDCA20BDF6084 /* AppWordmark.swift in Sources */,
+			E8DADD2F8CD709C1E208337D /* BottomJoinedActions.swift in Sources */,
+			FEB07933FA96968C7D5CCEAA /* DeviceIcon.swift in Sources */,
+			31D85A1E9ED288240FA94215 /* JoinedPillPicker.swift in Sources */,
+			849AE546AC219899C143590A /* Sparkline.swift in Sources */,
+			5A959ADD168661278E003C4B /* StatusDot.swift in Sources */,
+			2556F9C360BE6C8F57912017 /* DeviceDetailView.swift in Sources */,
+			5312A0252D721C464162E4D9 /* DeviceListView.swift in Sources */,
+			6B54CA98020ACBBE4B8F5EF3 /* DeviceRowView.swift in Sources */,
+			55FDE55E3BB1C7365B3C44FF /* MonitorTileView.swift in Sources */,
+			082EDCE0A13C33B16C3F2CE8 /* MonitorView.swift in Sources */,
+			50FA51306F8D27133F2F6ED3 /* ScanSetupView.swift in Sources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BFD315016DE16320F7E2120C /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_ENABLE_OBJC_WEAK = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			SDKROOT = iphoneos;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_TESTABILITY = YES;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)",);
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			ONLY_ACTIVE_ARCH = YES;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+		}; name = Debug; };
+		1D8C0C6B1D22EA8C7669B263 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_ENABLE_OBJC_WEAK = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			SDKROOT = iphoneos;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_NS_ASSERTIONS = NO;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			SWIFT_COMPILATION_MODE = wholemodule;
+			VALIDATE_PRODUCT = YES;
+		}; name = Release; };
+		75BB3D5A44EA88B6630AB580 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_ACCENT_COLOR_NAME = AccentColor;
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 3;
+			SWIFT_OBJC_BRIDGING_HEADER = "InLAN/Networking/InLAN-Bridging-Header.h";
+			DEVELOPMENT_ASSET_PATHS = "";
+			GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = InLAN/Resources/Info.plist;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = au.h-v.in.lan;
+			PRODUCT_MODULE_NAME = InLAN;
+			PRODUCT_NAME = "In.LAN";
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SUPPORTS_MACCATALYST = NO;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_STRICT_CONCURRENCY = minimal;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Debug; };
+		78E9FF212122B0C0397A6DB4 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_ACCENT_COLOR_NAME = AccentColor;
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 3;
+			SWIFT_OBJC_BRIDGING_HEADER = "InLAN/Networking/InLAN-Bridging-Header.h";
+			DEVELOPMENT_ASSET_PATHS = "";
+			GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = InLAN/Resources/Info.plist;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = au.h-v.in.lan;
+			PRODUCT_MODULE_NAME = InLAN;
+			PRODUCT_NAME = "In.LAN";
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SUPPORTS_MACCATALYST = NO;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_STRICT_CONCURRENCY = minimal;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		314425BAD361EE8153704C56 /* Build configuration list for PBXProject "InLAN" */ = {isa = XCConfigurationList; buildConfigurations = (BFD315016DE16320F7E2120C /* Debug */, 1D8C0C6B1D22EA8C7669B263 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		E31BA15CC04B0F0B923553D1 /* Build configuration list for PBXNativeTarget "InLAN" */ = {isa = XCConfigurationList; buildConfigurations = (75BB3D5A44EA88B6630AB580 /* Debug */, 78E9FF212122B0C0397A6DB4 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E88446A3F44B57E975BE17B /* Project object */;
+}

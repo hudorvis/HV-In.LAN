@@ -1,0 +1,29 @@
+name: In.LAN
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test loopback probes, saved devices and subnet ranges
+        run: |
+          cc -std=gnu17 -Wall -Wextra -Werror Tests/probe.c -o "$RUNNER_TEMP/probe"
+          "$RUNNER_TEMP/probe"
+          swiftc InLAN/Models/{AppMode,LANDevice,NetworkSnapshot}.swift InLAN/Persistence/DeviceStore.swift Tests/main.swift -o "$RUNNER_TEMP/model"
+          "$RUNNER_TEMP/model"
+      - name: Build for iPhone and iPad Simulator
+        run: xcodebuild -project InLAN.xcodeproj -scheme InLAN -configuration Debug -destination 'generic/platform=iOS Simulator' -derivedDataPath "$RUNNER_TEMP/inlan" CODE_SIGNING_ALLOWED=NO build
+      - name: Build the release for physical devices
+        run: xcodebuild -project InLAN.xcodeproj -scheme InLAN -configuration Release -destination 'generic/platform=iOS' -derivedDataPath "$RUNNER_TEMP/inlan" CODE_SIGNING_ALLOWED=NO build
+      - name: Package simulator app
+        run: |
+          cd "$RUNNER_TEMP/inlan/Build/Products/Debug-iphonesimulator"
+          ditto -c -k --keepParent In.LAN.app "$RUNNER_TEMP/In.LAN-Simulator.zip"
+      - name: Upload simulator app
+        uses: actions/upload-artifact@v4
+        with:
+          name: In.LAN-Simulator
+          path: ${{ runner.temp }}/In.LAN-Simulator.zip
+          if-no-files-found: error

@@ -1,0 +1,37 @@
+workflows:
+  inlan-ios:
+    name: In.LAN iOS
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    integrations:
+      app_store_connect: In.LAN
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: au.h-v.in.lan
+      vars:
+        XCODE_PROJECT: InLAN.xcodeproj
+        XCODE_SCHEME: InLAN
+      xcode: latest
+    scripts:
+      - name: Confirm In.LAN source revision
+        script: |
+          echo "In.LAN source revision v26.11.19.01"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :InLANSourceRevision' InLAN/Resources/Info.plist)" = "v26.11.19.01"
+          test -f "InLAN/App/AppRootView.swift"
+          test -f "InLAN/Networking/NetworkScanner.swift"
+      - name: Apply signing profiles
+        script: |
+          xcode-project use-profiles
+      - name: Build IPA
+        script: |
+          xcode-project build-ipa \
+            --project "$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: false
