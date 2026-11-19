@@ -44,8 +44,10 @@ int main(void) {
     length = sizeof(unused);
     assert(getsockname(closed_port_socket, (struct sockaddr *)&unused, &length) == 0);
     uint16_t closed_port = ntohs(unused.sin_port);
+    close(closed_port_socket);
     result = (LANProbeResult){.echo_ms = -1};
     tcp_batch(&closed_port, 1, local, local, index, flag, &result);
+    fprintf(stderr, "Closed port %u checked=%d refused=%d open=%u local_error=%d denied=%d\n", closed_port, result.tcp_checked, result.tcp_refused, result.open_port, result.local_error, result.access_denied);
     assert(result.tcp_checked && result.tcp_refused && !result.open_port);
     result = (LANProbeResult){.echo_ms = -1};
     uint16_t candidates[] = {closed_port, closed_port, closed_port, port};
@@ -58,7 +60,6 @@ int main(void) {
     lan_cancel_set(flag);
     result = lan_probe(local, local, index, port, flag);
     assert(!result.echo_sent && !result.tcp_checked && !result.open_port && !result.tcp_refused);
-    close(closed_port_socket);
     lan_cancel_destroy(flag);
     puts("Cancellation passed.");
 }
